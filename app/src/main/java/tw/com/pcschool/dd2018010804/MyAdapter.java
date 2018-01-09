@@ -63,6 +63,7 @@ public class MyAdapter extends BaseAdapter {
         viewHolder.tv.setText(mylist.get(position).get("city").toString());
         viewHolder.tv2.setText(mylist.get(position).get("code").toString());
         viewHolder.img.setImageResource((Integer) mylist.get(position).get("img"));
+        viewHolder.chk.setOnCheckedChangeListener(null);
         viewHolder.chk.setChecked(chks[position]);
         viewHolder.chk.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
