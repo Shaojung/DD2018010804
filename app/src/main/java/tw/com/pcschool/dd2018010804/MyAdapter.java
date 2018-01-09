@@ -60,8 +60,6 @@ public class MyAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) v.getTag();
         }
 
-
-
         viewHolder.tv.setText(mylist.get(position).get("city").toString());
         viewHolder.tv2.setText(mylist.get(position).get("code").toString());
         viewHolder.img.setImageResource((Integer) mylist.get(position).get("img"));
