@@ -20,12 +20,13 @@ import java.util.Map;
 
 public class MyAdapter extends BaseAdapter {
     ArrayList<Map<String, Object>> mylist = new ArrayList();
-    boolean chks[] = new boolean[8];
+    boolean chks[];
     Context context;
-    public MyAdapter(Context context, ArrayList<Map<String, Object>> mylist)
+    public MyAdapter(Context context, ArrayList<Map<String, Object>> mylist, boolean chks[])
     {
         this.context = context;
         this.mylist = mylist;
+        this.chks = chks;
     }
     @Override
     public int getCount() {
